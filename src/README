@@ -1,0 +1,42 @@
+# XML-JSON Converter
+
+## Descripción del Proyecto
+Este proyecto implementa un conversor bidireccional entre formatos XML y JSON, permitiendo transformaciones seamless entre ambos tipos de representación de datos.
+
+## Requisitos
+- Sistema Operativo: Windows
+- IDE: Visual Studio Code
+- Java Development Kit (JDK)
+- Maven
+
+## Dependencias
+```xml
+<dependency>
+    <groupId>org.json</groupId>
+    <artifactId>json</artifactId>
+    <version>20180813</version>
+</dependency>
+```
+
+## Características
+- Conversión de XML a JSON
+- Conversión de JSON a XML
+- Manejo robusto de diferentes estructuras de datos
+- Soporte para anidamiento complejo
+
+## Configuración del Proyecto
+1. Clonar repositorio
+2. Instalar dependencias con Maven
+3. Compilar proyecto
+4. Ejecutar conversiones
+
+## Uso
+```java
+// Ejemplo de conversión XML a JSON
+String xml = "<root><element>valor</element></root>";
+JSONObject json = XMLConverter.xmlToJson(xml);
+
+// Ejemplo de conversión JSON a XML
+String jsonStr = "{'root': {'element': 'valor'}}";
+String xml = XMLConverter.jsonToXml(jsonStr);
+```
